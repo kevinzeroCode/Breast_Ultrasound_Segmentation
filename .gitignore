@@ -1,0 +1,19 @@
+# --- 忽略資料集 (最重要！) ---
+dataset/
+*.png
+!docs/images/*.png  # 但保留 docs/images 裡的結果圖
+
+# --- 忽略 Python 快取與環境 ---
+__pycache__/
+*.pyc
+venv/
+.env
+.ipynb_checkpoints/
+
+# --- 忽略大型模型權重 (可選) ---
+# 如果模型檔案 > 100MB，GitHub 會擋。
+# 如果只是幾十 MB，可以註解掉下面這行以上傳模型。
+# *.h5
+
+# --- 系統檔案 ---
+.DS_Store
