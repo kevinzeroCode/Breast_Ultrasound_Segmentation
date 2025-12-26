@@ -88,13 +88,17 @@ bash
 python predict.py --model_path best_attention_model.h5 --samples 5
 ```
 
-## 📊 Experimental ResultsWe evaluated the model on the BUSI dataset. The integration of Self-Attention, particularly in the Decoder and Skip Connections, showed superior performance.
-Quantitative Comparison
-Model Architecture,Mean IoU,Precision,Recall,F1 Score
-Standard U-Net,0.764,0.743,0.718,0.730
-Attention U-Net (Ours),0.790,0.756,0.789,0.772
-(Metrics based on our experimental logs)
+## 📊 Experimental Results
 
+We evaluated the model on the BUSI dataset. The integration of Self-Attention, particularly in the Decoder and Skip Connections, showed superior performance.
+### Quantitative Comparison
+
+| Model Architecture | Mean IoU | Precision | Recall | F1 Score |
+| :--- | :---: | :---: | :---: | :---: |
+| **Standard U-Net** | 0.764 | 0.743 | 0.718 | 0.730 |
+| **Attention U-Net (Ours)** | **0.790** | **0.756** | **0.789** | **0.772** |
+
+*(Metrics based on our experimental logs)*
 Qualitative Visualization
 Loss & Accuracy Curves: (Self-Attention U-Net shows faster convergence and higher validation accuracy)
 
